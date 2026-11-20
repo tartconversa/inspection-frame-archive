@@ -1,0 +1,58 @@
+{
+  "intake": 1,
+  "table": "requests",
+  "records": [
+    {
+      "id": "qa",
+      "item": "gear03",
+      "face": "edge",
+      "capture": "shot-a",
+      "rectangle": [
+        "104",
+        "204",
+        "112",
+        "210"
+      ],
+      "consumer": "legacy"
+    },
+    {
+      "id": "qb",
+      "item": "gear19",
+      "face": "face",
+      "capture": "shot-b",
+      "rectangle": [
+        "146",
+        "226",
+        "158",
+        "238"
+      ],
+      "consumer": "review"
+    },
+    {
+      "id": "qc",
+      "item": "gear19",
+      "face": "face",
+      "capture": "shot-b",
+      "rectangle": [
+        "152",
+        "224",
+        "160",
+        "232"
+      ],
+      "consumer": "legacy"
+    },
+    {
+      "id": "qd",
+      "item": "gear19",
+      "face": "face",
+      "capture": "shot-c",
+      "rectangle": [
+        "160",
+        "198",
+        "176",
+        "218"
+      ],
+      "consumer": "review"
+    }
+  ]
+}

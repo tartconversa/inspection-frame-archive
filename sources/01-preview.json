@@ -1,0 +1,16 @@
+{
+  "intake": 1,
+  "table": "preview",
+  "records": [
+    {
+      "id": "grayA",
+      "black": 0,
+      "white": 255
+    },
+    {
+      "id": "grayB",
+      "black": 128,
+      "white": 3800
+    }
+  ]
+}

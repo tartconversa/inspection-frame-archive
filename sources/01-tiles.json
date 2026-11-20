@@ -1,0 +1,102 @@
+{
+  "intake": 1,
+  "table": "tiles",
+  "records": [
+    {
+      "id": "a-all",
+      "capture": "shot-a",
+      "x": 0,
+      "y": 0,
+      "width": 8,
+      "height": 6,
+      "file": "a.pgm",
+      "replaces": null,
+      "size": 59,
+      "sha256": "7d03eea2df017bc32db0ff42979495874eea2dabe0587e86618bdeca249c713e"
+    },
+    {
+      "id": "b0",
+      "capture": "shot-b",
+      "x": 0,
+      "y": 0,
+      "width": 5,
+      "height": 4,
+      "file": "b0.raw",
+      "replaces": null,
+      "size": 32,
+      "sha256": "8250d90da2dc51fbe6a790b03be534890cfcba6a05136d5210b1692c45764632"
+    },
+    {
+      "id": "b1",
+      "capture": "shot-b",
+      "x": 5,
+      "y": 0,
+      "width": 7,
+      "height": 4,
+      "file": "b1.raw",
+      "replaces": null,
+      "size": 48,
+      "sha256": "d5f28cc360c4cffdd7855d8c73dd518e5d0d5dabd502a41f8453013c7633c753"
+    },
+    {
+      "id": "b2",
+      "capture": "shot-b",
+      "x": 0,
+      "y": 4,
+      "width": 5,
+      "height": 4,
+      "file": "b2.raw",
+      "replaces": null,
+      "size": 32,
+      "sha256": "d7d7bc86935b8cac491eba23ac0a9a17d4f8f3f56c0ae39bdd6ed1c77283de18"
+    },
+    {
+      "id": "c0",
+      "capture": "shot-c",
+      "x": 0,
+      "y": 0,
+      "width": 5,
+      "height": 4,
+      "file": "c0.raw",
+      "replaces": null,
+      "size": 32,
+      "sha256": "8250d90da2dc51fbe6a790b03be534890cfcba6a05136d5210b1692c45764632"
+    },
+    {
+      "id": "c1",
+      "capture": "shot-c",
+      "x": 5,
+      "y": 0,
+      "width": 7,
+      "height": 4,
+      "file": "c1.raw",
+      "replaces": null,
+      "size": 48,
+      "sha256": "9fd52e4e933ab68ec27736b61abbb0139d1889cbfe935bcaa24001992d0c8849"
+    },
+    {
+      "id": "c2",
+      "capture": "shot-c",
+      "x": 0,
+      "y": 4,
+      "width": 5,
+      "height": 4,
+      "file": "c2.raw",
+      "replaces": null,
+      "size": 32,
+      "sha256": "d7d7bc86935b8cac491eba23ac0a9a17d4f8f3f56c0ae39bdd6ed1c77283de18"
+    },
+    {
+      "id": "c3",
+      "capture": "shot-c",
+      "x": 5,
+      "y": 4,
+      "width": 7,
+      "height": 4,
+      "file": "c3.raw",
+      "replaces": null,
+      "size": 48,
+      "sha256": "e4c757f7e86aec7443637515b3226e9e8d1609a59a4a11190944d9358fc7b71e"
+    }
+  ]
+}

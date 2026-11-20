@@ -1,0 +1,17 @@
+{
+  "intake": 3,
+  "table": "geometry",
+  "records": [
+    {
+      "id": "gb2",
+      "capture": "shot-b",
+      "ox": 164,
+      "oy": 216,
+      "ux": 0,
+      "uy": 2,
+      "vx": -2,
+      "vy": 0,
+      "replaces": "gb"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "intake": 1,
+  "table": "geometry",
+  "records": [
+    {
+      "id": "ga",
+      "capture": "shot-a",
+      "ox": 100,
+      "oy": 200,
+      "ux": 2,
+      "uy": 0,
+      "vx": 0,
+      "vy": 2,
+      "replaces": null
+    },
+    {
+      "id": "gb",
+      "capture": "shot-b",
+      "ox": 160,
+      "oy": 220,
+      "ux": 0,
+      "uy": 2,
+      "vx": -2,
+      "vy": 0,
+      "replaces": null
+    },
+    {
+      "id": "gc",
+      "capture": "shot-c",
+      "ox": 160,
+      "oy": 220,
+      "ux": 0,
+      "uy": -2,
+      "vx": 2,
+      "vy": 0,
+      "replaces": null
+    }
+  ]
+}

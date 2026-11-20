@@ -1,0 +1,71 @@
+{
+  "captures": {
+    "id": "text",
+    "item": "text",
+    "face": "text",
+    "width": "int",
+    "height": "int",
+    "format": "text",
+    "preview": "text"
+  },
+  "geometry": {
+    "id": "text",
+    "capture": "text",
+    "ox": "int",
+    "oy": "int",
+    "ux": "int",
+    "uy": "int",
+    "vx": "int",
+    "vy": "int",
+    "replaces": "text"
+  },
+  "tiles": {
+    "id": "text",
+    "capture": "text",
+    "x": "int",
+    "y": "int",
+    "width": "int",
+    "height": "int",
+    "file": "text",
+    "replaces": "text",
+    "size": "int",
+    "sha256": "text"
+  },
+  "preview": {
+    "id": "text",
+    "black": "int",
+    "white": "int"
+  },
+  "quality": {
+    "id": "text",
+    "issued_for": "text",
+    "effect": "text",
+    "region": "items",
+    "cause": "text"
+  },
+  "requests": {
+    "id": "text",
+    "item": "text",
+    "face": "text",
+    "capture": "text",
+    "rectangle": "items",
+    "consumer": "text"
+  },
+  "reference_pixels": {
+    "id": "text",
+    "capture": "text",
+    "tile": "text",
+    "x": "int",
+    "y": "int",
+    "sample": "int"
+  },
+  "prior_claims": {
+    "id": "text",
+    "capture": "text",
+    "geometry": "text",
+    "region": "items",
+    "tiles": "items",
+    "form": "text",
+    "recipient": "text"
+  }
+}

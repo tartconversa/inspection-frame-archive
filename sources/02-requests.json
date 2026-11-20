@@ -1,0 +1,19 @@
+{
+  "intake": 2,
+  "table": "requests",
+  "records": [
+    {
+      "id": "qe",
+      "item": "gear19",
+      "face": "face",
+      "capture": "shot-b",
+      "rectangle": [
+        "144",
+        "228",
+        "152",
+        "244"
+      ],
+      "consumer": "legacy"
+    }
+  ]
+}

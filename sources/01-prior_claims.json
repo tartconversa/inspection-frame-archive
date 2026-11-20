@@ -1,0 +1,70 @@
+{
+  "intake": 1,
+  "table": "prior_claims",
+  "records": [
+    {
+      "id": "z01",
+      "capture": "shot-a",
+      "geometry": "ga",
+      "region": [
+        "104",
+        "204",
+        "112",
+        "210"
+      ],
+      "tiles": [
+        "a-all"
+      ],
+      "form": "pgm",
+      "recipient": "console"
+    },
+    {
+      "id": "z02",
+      "capture": "shot-b",
+      "geometry": "gb",
+      "region": [
+        "154",
+        "220",
+        "160",
+        "226"
+      ],
+      "tiles": [
+        "b0"
+      ],
+      "form": "raw",
+      "recipient": "lab1"
+    },
+    {
+      "id": "z03",
+      "capture": "shot-c",
+      "geometry": "gc",
+      "region": [
+        "160",
+        "210",
+        "168",
+        "220"
+      ],
+      "tiles": [
+        "c0"
+      ],
+      "form": "raw",
+      "recipient": "lab2"
+    },
+    {
+      "id": "z04",
+      "capture": "shot-c",
+      "geometry": "gc",
+      "region": [
+        "168",
+        "198",
+        "176",
+        "210"
+      ],
+      "tiles": [
+        "c3"
+      ],
+      "form": "raw",
+      "recipient": "lab2"
+    }
+  ]
+}

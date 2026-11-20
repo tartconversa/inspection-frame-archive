@@ -1,0 +1,18 @@
+{
+  "intake": 2,
+  "table": "quality",
+  "records": [
+    {
+      "id": "qc-lower",
+      "issued_for": "shot-c",
+      "effect": "pixels",
+      "region": [
+        "5",
+        "4",
+        "12",
+        "8"
+      ],
+      "cause": "sensor-fault"
+    }
+  ]
+}

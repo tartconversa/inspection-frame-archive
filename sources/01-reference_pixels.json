@@ -1,0 +1,30 @@
+{
+  "intake": 1,
+  "table": "reference_pixels",
+  "records": [
+    {
+      "id": "a-ref",
+      "capture": "shot-a",
+      "tile": "a-all",
+      "x": 2,
+      "y": 2,
+      "sample": 194
+    },
+    {
+      "id": "b-ref",
+      "capture": "shot-b",
+      "tile": "b0",
+      "x": 3,
+      "y": 2,
+      "sample": 389
+    },
+    {
+      "id": "b-ref2",
+      "capture": "shot-b",
+      "tile": "b1",
+      "x": 8,
+      "y": 3,
+      "sample": 623
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "intake": 1,
+  "table": "captures",
+  "records": [
+    {
+      "id": "shot-a",
+      "item": "gear03",
+      "face": "edge",
+      "width": 8,
+      "height": 6,
+      "format": "p8",
+      "preview": "grayA"
+    },
+    {
+      "id": "shot-b",
+      "item": "gear19",
+      "face": "face",
+      "width": 12,
+      "height": 8,
+      "format": "t12",
+      "preview": "grayB"
+    },
+    {
+      "id": "shot-c",
+      "item": "gear19",
+      "face": "face",
+      "width": 12,
+      "height": 8,
+      "format": "t12",
+      "preview": "grayB"
+    }
+  ]
+}

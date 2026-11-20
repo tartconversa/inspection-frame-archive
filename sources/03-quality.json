@@ -1,0 +1,13 @@
+{
+  "intake": 3,
+  "table": "quality",
+  "records": [
+    {
+      "id": "qc-geometry",
+      "issued_for": "gc",
+      "effect": "geometry",
+      "region": [],
+      "cause": "wrong-origin"
+    }
+  ]
+}
