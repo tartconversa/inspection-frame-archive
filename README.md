@@ -30,3 +30,41 @@
 python source_inventory.py
 python -m unittest discover -s tests -v
 ```
+
+## 局部读片归档（`filmarchive/`）
+
+在源交付之上构建的只读归档，全部仅用标准库：
+
+| 模块 | 职责 |
+| --- | --- |
+| `coding.py` | p8/t12 译码与重打包、SHA-256、固定预览线性映射（四舍五入、半数向上） |
+| `geometry.py` | 位置合同：像素中心、左闭右开窗口、翻转/旋转基向量求逆、画面外格标记 |
+| `model.py` | 各源表的数据类型与毫米字符串到整数的入口转换 |
+| `archive.py` | 按 intake 装载、小块长度/哈希核验、替换链、冲突保留与不可变快照 |
+| `query.py` | 窗口读取、五类单元格状态、掩码、逐格字节出处、原始包与八位 PGM 导出 |
+| `claims.py` | 已签发引用复核（同字节同坐标出处）、作废作用范围、参考像素校准 |
+| `cli.py` | 本地命令行入口 |
+
+### 关键约定
+
+* **单元格状态**：`ok`（真实黑像素 0 也是 ok）、`void`（源像素质量作废，值仍留存但不作证据）、`missing`（小块未到或核验失败）、`conflict`（矛盾重传且无 replacement 合同）、`outside`（有效合同下落到画面外）。
+* **缺失掩码与作废掩码分开**；原始包缺口位置打包补零，权威状态以掩码为准，绝不从预览反推原始值。
+* **快照不可变**：一次读片的原图、预览、坐标来自同一快照；之后收到补块不影响已发出的结论。
+* **替换只在核验通过后生效**：补块接收到一半或核验中断时，旧的已发布版本继续可读。
+* **预览拒绝**：缺口或作废格横跨选区时，明确返回无法提供完整预览及实际缺口，不生成可能被误读的 PGM。
+* **已签发引用**：按签发时固定的几何合同与小块集合重建；合同推进后旧引用仍返回相同字节与坐标出处（`superseded`）；质量作废按 `geometry`/`pixels`/`whole` 说明缘由并停止作为证据（`void`）。
+
+### 命令行
+
+```sh
+python -m filmarchive inventory             # 按批次盘点
+python -m filmarchive status                # 小块核验、替换、冲突状态
+python -m filmarchive snapshot --intake 2   # 某到达时点的发布视图
+python -m filmarchive request --id qb       # 执行取片请求（默认最新批次）
+python -m filmarchive request --id qd --intake 3
+python -m filmarchive reference-check       # 供应方定点像素校准
+python -m filmarchive verify-claims         # 已签发引用跨批次核对
+python demo_scenarios.py                    # 五个端到端情景演示
+```
+
+`request` 输出包含窗口行列范围、未拉伸原始灰度、固定映射预览值、缺失/作废掩码、逐格小块与字节范围出处、原始包清单（含各小块 sha256）以及预览可否提供的结论。
